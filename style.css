@@ -128,6 +128,30 @@ nav img:hover {
     visibility: visible;
 }
 
+.tooltip3 {
+	position: relative;
+    display: inline-block;
+}
+.tooltip3-text {
+	visibility:hidden;
+    background-color: black;
+    color: white;
+    /* width: auto; */
+    font-size: 12px;
+    border-radius: 2px;
+    text-align: center;
+    padding: 4px;
+    position: absolute;
+    width: 100px;
+    top: 100%;
+    left: 50%;
+    margin-left: -50px;
+    z-index: 1;
+}
+
+.tooltip3:hover .tooltip3-text {
+    visibility: visible;
+}
 main {
 	display: flex;
 	flex-direction: column;
@@ -176,6 +200,15 @@ main {
     align-items: center;
     padding-right: 13px;
 	margin-right: -4%;
+}
+.g-search .tooltip3{
+	height: 20px;
+	display: flex;
+	flex: 0 0 auto;
+	align-items: stretch;
+	flex-direction: row;
+	margin-left: -3%;
+	margin-top: 1%;
 }
 .g-search .voice-search{
 	height: 20px;
@@ -313,6 +346,9 @@ footer .footer-links a:hover {
 		margin-right: -10%;
 	}
 	.g-search .voice-search {
+		margin-left: -5%;
+	}
+	.g-search .tooltip3 {
 		margin-left: -5%;
 	}
 	.g-feeling input {
