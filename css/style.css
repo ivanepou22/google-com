@@ -1,0 +1,346 @@
+*{
+	padding: 0;
+	margin:0;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+	font-family: arial, sans-serif;
+    height: 100vh;
+}
+header {
+    width: 100%;
+}
+nav  > ul{
+	display: flex;
+	align-items: center;
+    justify-items: center;
+	justify-content: flex-end;
+	margin-right: 2px;
+	margin-top: 5px;
+}
+
+nav > ul > li {
+    list-style: none;
+}
+nav a {
+    text-decoration: none;
+	font-size: 13px;
+	display: inline-block;
+	line-height: 24px;
+	font-weight: 400;
+	color: rgb(0,0,0, 0.87);
+	cursor: pointer;
+	padding: 4px 6.7px
+}
+nav a:hover {
+	text-decoration: underline;
+	opacity: .85;
+}
+nav .menu-icon {
+	width: 22px;
+	padding: 5px 0 5px 5px;
+	margin: auto 3px;
+	cursor: pointer;
+}
+nav .acc-pp {
+    width: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+nav .acc-pp:hover {
+	border: 1px solid #fff;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.05),
+				0 0 2px rgba(0, 0, 0, 0.05),
+				0 0 3px rgba(0, 0, 0, 0.05),
+				0 0 4px rgba(0, 0, 0, 0.05),
+				0 0 5px rgba(0, 0, 0, 0.05),
+				0 0 4px rgba(0, 0, 0, 0.05),
+				0 0 5px rgba(0, 0, 0, 0.05)
+}
+
+nav .menu-icon:hover {
+	border: 1px solid #fff;
+	border-radius: 15px;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.05),
+				0 0 2px rgba(0, 0, 0, 0.05),
+				0 0 3px rgba(0, 0, 0, 0.05),
+				0 0 4px rgba(0, 0, 0, 0.05),
+				0 0 5px rgba(0, 0, 0, 0.05),
+				0 0 4px rgba(0, 0, 0, 0.05),
+				0 0 5px rgba(0, 0, 0, 0.05)
+}
+nav img:hover {
+	opacity: .8;
+}
+.tooltip1 {
+    position: relative;
+    display: inline-block;
+}
+.tooltip1-text {
+    visibility:hidden;
+    background-color: black;
+    color: white;
+    /* width: auto; */
+    font-size: 12px;
+    border-radius: 2px;
+    text-align: center;
+    padding: 4px;
+    position: absolute;
+    width: 100px;
+    top: 100%;
+    left: 50%;
+    margin-left: -50px;
+    z-index: 1;
+}
+.tooltip1:hover .tooltip1-text {
+    visibility: visible;
+}
+
+.tooltip2 {
+    position: relative;
+    display: inline-block;
+}
+.tooltip2-text {
+    visibility:hidden;
+    background-color: black;
+    color: white;
+    width: 150px;
+    font-size: 12px;
+    border-radius: 2px;
+    text-align: left;
+    padding: 5px;
+    top: 100%;
+    margin-left: -70px;
+    right: 30%;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 1;
+}
+.g-name, .g-email {
+    padding: 2px;
+    color: rgb(114, 111, 111);
+    font-weight: 600;
+}
+.tooltip2:hover .tooltip2-text {
+    visibility: visible;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;;
+}
+.google-search .logo {
+	display: block;
+	margin: auto;
+	margin-top: 1%;
+}
+
+.g-search {
+	display: flex;
+	justify-content: center;
+	margin-top: 1.5%;
+}
+.g-search .search-input{
+	transition: box-shadow 100ms;
+	background-color: transparent;
+    border: 1px solid #ddd;
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+	width: 37%;
+    -webkit-tap-highlight-color: transparent;
+    height: 34px;
+    font-size: 16px;
+	border-radius: 25px;
+	padding: 5px 45px 5px 45px;
+}
+.g-search .search-input:hover {
+	border: 1px solid #fff;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.05),
+				0 0 2px rgba(0, 0, 0, 0.05),
+				0 0 3px rgba(0, 0, 0, 0.05),
+				0 0 4px rgba(0, 0, 0, 0.05),
+				0 0 5px rgba(0, 0, 0, 0.05),
+				0 0 4px rgba(0, 0, 0, 0.05),
+				0 0 5px rgba(0, 0, 0, 0.05)
+}
+ .g-search .icon-search {
+	width: 20px;
+	display: flex;
+    align-items: center;
+    padding-right: 13px;
+	margin-right: -4%;
+}
+.g-search .voice-search{
+	height: 20px;
+	display: flex;
+	flex: 0 0 auto;
+	align-items: stretch;
+	flex-direction: row;
+	margin-left: -3%;
+	margin-top: 1%;
+}
+
+.g-feeling {
+    display: flex;
+    justify-content: center;
+}
+
+.g-feeling input {
+		border: 1px solid transparent;
+		padding: 9px 15px;
+		background-color: rgba(223, 213, 213, 0.404);
+		color: #666;
+		font-size: 14px;
+		border-radius: 4px;
+		display: inline-block;
+		margin-right: 10px;
+		margin-top: 28px;
+		outline: none;
+		cursor: pointer;
+		transition: border-color 100ms;
+}
+
+.g-feeling input:hover{
+	border: 1px solid #aaa;
+}
+.g-lang {
+	margin-top: 15px;
+	text-align: center;
+	font-size: 13px;
+	color: #111;
+    padding: 20px;
+}
+.g-lang a {
+	margin-left: 5px;
+	color: #1a0dab;
+    text-decoration: none;
+}
+.g-lang a:hover {
+	text-decoration: underline;
+}
+
+footer {
+	background: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+	flex: 1;
+	padding: 10px;
+	margin-top: auto;
+}
+
+ footer .footer-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left > ul {
+    display: flex;
+    justify-items: flex-start;
+    flex-direction: row;
+}
+
+.footer-left > ul >li {
+    list-style: none;
+}
+.footer-right > ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+.footer-right > ul >li {
+    list-style: none;
+}
+footer .footer-loc h4 {
+	color: rgba(0,0,0, 0.54);
+	font-size: 15px;
+	line-height: 39.5px;
+	font-weight: 400;
+	padding-left: 29px;
+	border: 1px solid #eee;
+}
+footer .footer-links a {
+	color: #5f6368;
+	display: inline-block;
+	padding: 12px 11.3px;
+	font-size: 15px;
+    text-decoration: none;
+}
+footer .footer-links a:hover {
+	text-decoration: underline;
+}
+.footer-links {
+	border-top: 1px solid #ddd;
+	display: flex;
+}
+.footer-left {
+	padding-left: 18.7px;
+	flex: 1;
+}
+.footer-right {
+	padding-right: 18.7px;
+}
+@media only screen and (max-width: 840px) {
+	body {
+		width: 100vw;
+	}
+	main {
+		width: 100vw;
+	}
+	footer{
+		width: 100vw;
+	}
+	footer .footer-links a{
+		font-size: 7px;
+	}
+	.google-search .logo {
+		width: 30vw;
+		margin-top: 10px;
+	}
+	.g-search .search-input {
+		width: 60%;
+		height: 10%;
+	}
+	.g-search .icon-search {
+		height: 20px;
+		margin-top: 1%;
+		margin-right: -10%;
+	}
+	.g-search .voice-search {
+		margin-left: -5%;
+	}
+	.g-feeling input {
+		font-size: 10px;
+	}
+
+	.g-lang a {
+		font-size: 10px;
+	}
+}
+
+@media screen and (max-width: 654px) {
+	.g-search .icon-search {
+		height: 15px;
+		margin-top: 2%;
+		margin-right: -12%;
+	}
+	footer .footer-links a{
+		font-size: 4px;
+		padding: 2px;
+	}
+	body {
+		width: 100vw;
+	}
+	main {
+		width: 100vw;
+	}
+	footer{
+		width: 100vw;
+	}
+}
