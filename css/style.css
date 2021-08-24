@@ -127,7 +127,8 @@ nav img:hover {
 .tooltip2:hover .tooltip2-text {
     visibility: visible;
 }
-
+/* https://www.pivotaltracker.com/
+ */
 .tooltip3 {
 	position: relative;
     display: inline-block;
@@ -319,6 +320,7 @@ footer .footer-links a:hover {
 .footer-right {
 	padding-right: 18.7px;
 }
+
 @media only screen and (max-width: 840px) {
 	body {
 		width: 100vw;
